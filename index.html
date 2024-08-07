@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.3cba04c6.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
@@ -1457,6 +1457,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Citation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#license" class="md-nav__link">
     <span class="md-ellipsis">
       License
@@ -1496,13 +1505,13 @@
 </div>
 
 <hr />
-<p>A framework for enhancing LLMs for RAG use-cases by enabling users to create data-augmented datasets for tuning and
-evaluation of LLMs, using RAG workflows.</p>
+<p><a href="https://arxiv.org/abs/2408.02545">RAG Foundry: A Framework for Enhancing LLMs for Retrieval Augmented Generation</a></p>
 <p><strong>RAG Foundry</strong> is a library designed to improve LLMs ability to use external information by fine-tuning models on
 specially created RAG-augmented datasets. The library helps create the data for training, given a RAG technique, helps
 easily train models using parameter-efficient finetuning (PEFT), and finally can help users measure the improved
 performance using various, RAG-specific metrics. The library is modular, workflows are customizable using configuration
 files.</p>
+<p>Comments, suggestions, issues and pull-requests are welcomed! ❤️</p>
 <h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
 <p>Clone locally and run:</p>
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
@@ -1553,6 +1562,18 @@ overridden like so:</p>
 </span></code></pre></div></p>
 <p>For a complete set of configurations, <strong>reproducing the experimentation in the paper with the ASQA dataset</strong>, see the
 configurations in the <a href="./configs/paper">Paper</a> folder.</p>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
+<p>Please cite our paper if it helps your research:</p>
+<div class="language-BibTex highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nc">@article</span><span class="p">{</span><span class="nl">fleischerRAGFoundryFramework2024</span><span class="p">,</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w">        </span><span class="s">{{RAG} {Foundry}: {A} {Framework} for {Enhancing} {LLMs} for {Retrieval} {Augmented} {Generation}}</span><span class="p">,</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w">       </span><span class="s">{Fleischer, Daniel and Berchansky, Moshe and Wasserblat, Moshe and Izsak, Peter}</span><span class="p">,</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w">         </span><span class="m">2024</span><span class="p">,</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="na">note</span><span class="w"> </span><span class="p">=</span><span class="w">         </span><span class="s">{arXiv:2408.02545 [cs]}</span><span class="p">,</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="na">annote</span><span class="w"> </span><span class="p">=</span><span class="w">       </span><span class="s">{Comment: 10 pages}</span><span class="p">,</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="na">url</span><span class="w"> </span><span class="p">=</span><span class="w">          </span><span class="s">{http://arxiv.org/abs/2408.02545}</span><span class="p">,</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="na">publisher</span><span class="w"> </span><span class="p">=</span><span class="w">    </span><span class="s">{arXiv}</span><span class="p">,</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">}</span>
+</span></code></pre></div>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
 <p>The code is licensed under the <a href="LICENSE">Apache 2.0 License</a>.</p>
 <h2 id="disclaimer">Disclaimer<a class="headerlink" href="#disclaimer" title="Permanent link">&para;</a></h2>
@@ -1631,7 +1652,7 @@ configurations in the <a href="./configs/paper">Paper</a> folder.</p>
     <script id="__config" type="application/json">{"base": ".", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>
